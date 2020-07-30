@@ -15,8 +15,6 @@
 </head>
 
 <body>
-  <img class="background-image top-left" src="Images/Left.png">
-  <img class="background-image top-right" src="Images/Left.png">
 
 
   <div id="Top-Nav-Wrapper">
@@ -77,8 +75,8 @@
             </div>
           </li>
 
-          <li class="nav-item">
-            <a class="nav-link disabled" href="#">Disabled</a>
+          <li class="nav-item active">
+            <a class="nav-link custom-font" href="Abilities.html">Abilities</a>
           </li>
 
         </ul>
@@ -87,106 +85,138 @@
   </div>
 
 
-  <div id="Page-Body">
+  <div id="Page-Body-Wrapper" style="background-image: url('Images/DefaultBackground.png');">
+    <div id="Page-Body">
 
-    <div id="Sidebar-Nav-Wrapper">
-      <nav id="Sidebar-Nav" class="shadow-dropper">
-        <div class="sidebar-header">
-          <a href="#">Bootstrap Sidebar</a>
+      <div id="Sidebar-Nav-Wrapper">
+        <nav id="Sidebar-Nav" class="shadow-dropper">
+          <div class="sidebar-header">
+            <a href="#">Bootstrap Sidebar</a>
+          </div>
+
+          <ul class="list-unstyled components">
+            <li class="active">
+              <a href="#homeSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Home</a>
+              <ul class="collapse list-unstyled" id="homeSubmenu">
+                <li><a href="#">Home 1</a></li>
+                <li><a href="#">Home 2</a></li>
+                <li><a href="#">Home 3</a></li>
+              </ul>
+            </li>
+            <li>
+              <a href="#">About</a>
+            </li>
+            <li>
+              <a href="#pageSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Pages</a>
+              <ul class="collapse list-unstyled" id="pageSubmenu">
+                <li><a href="#">Page 1</a></li>
+                <li><a href="#">Page 2</a></li>
+                <li><a href="#">Page 3</a></li>
+              </ul>
+            </li>
+            <li>
+              <a href="#">Portfolio</a>
+            </li>
+            <li>
+              <a href="#">Contact</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+
+      <div id="Page-Content">
+
+        <h1><img class="page-icon" src="Images/Icons/Races/Human.png" alt="/">Human</h1>
+        <hr>
+
+        <p>Humans are probably the most versatile of races, and that comes with its own advantages and disadvantages.</p>
+
+        <br>
+        <h2><img class="page-icon" src="Images/Icons/UI/CharacterSetup.png" alt="/">Character Setup</h2>
+        <hr>
+        <br>
+
+        <h3><img class="page-icon" src="Images/Icons/UI/CharacterSetupSub.png" alt="/">Stats and Saves</h3>
+        <hr class="hr-half">
+
+        <p>Choose 2 of the following stats and increase them by 1...</p>
+        <ul>
+          <li>Charisma</li>
+          <li>Intelligence</li>
+          <li>Wisdom</li>
+          <li>Dexterity</li>
+          <li>Fortitude</li>
+        </ul>
+
+
+
+
+
+
+        <hr>
+
+        <p><b>Your <img class="text-symbol" src="Images/Icons/UI/Speed.png" alt="/">Speed is 6 meters meters.</b></p>
+        <p><b>Your starting <img class="text-symbol" src="Images/Icons/UI/Health.png" alt="/">Health is 10.</b></p>
+        <span class="spell-extra">Your total Health will be Class Health + 10 + 2 * Fortitude + (5 for each level after Level 1).</span>
+
+        <br>
+        <br>
+        <br>
+
+        <h3><img class="page-icon" src="Images/Icons/UI/CharacterSetupSub.png" alt="/">Other Things</h3>
+        <hr class="hr-half">
+        <p>If your Intelligence is at least 1, you know one additional Common language.</p>
+        <p>People of your kind live for 80 years and their size is Normal</p>
+        <p><br>You start with 2 extra Skill Points, and you also get +1 in two Skills of choice.</p>
+        <br>
+
+        <h2><img class="page-icon" src="Images/Icons/UI/Charge.png" alt="/">Starting Abilities</h2>
+        <hr>
+
+        <div class="spell-container">
+
+          <div class="spell">
+            <div class="spell-left">
+              <img src="Images/Icons/Spells/Human_Vigilence.png">
+            </div>
+            <div class="spell-right">
+              <h3 class="spell-name">Human Vigilence <span class="spell-actions-parenthesis">(</span><span class="spell-actions">Passive</span><span class="spell-actions-parenthesis">)</span></h3>
+
+
+
+              <p class="spell-description">
+                Whenever you make a Skill Check, instead of rolling, you can automatically have 7 + your skill modifiers for that check.
+
+              </p>
+
+
+
+
+            </div>
+          </div>
+
         </div>
 
-        <ul class="list-unstyled components">
-          <li class="active">
-            <a href="#homeSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Home</a>
-            <ul class="collapse list-unstyled" id="homeSubmenu">
-              <li><a href="#">Home 1</a></li>
-              <li><a href="#">Home 2</a></li>
-              <li><a href="#">Home 3</a></li>
-            </ul>
-          </li>
-          <li>
-            <a href="#">About</a>
-          </li>
-          <li>
-            <a href="#pageSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Pages</a>
-            <ul class="collapse list-unstyled" id="pageSubmenu">
-              <li><a href="#">Page 1</a></li>
-              <li><a href="#">Page 2</a></li>
-              <li><a href="#">Page 3</a></li>
-            </ul>
-          </li>
-          <li>
-            <a href="#">Portfolio</a>
-          </li>
-          <li>
-            <a href="#">Contact</a>
-          </li>
-        </ul>
-      </nav>
-    </div>
+        <br>
+        <br>
 
-    <div id="Page-Content">
+        <h2><img class="page-icon" src="Images/Icons/UI/Specializations.png" alt="/">Talents</h2>
+        <hr>
 
-      <h1><img class="page-icon" src="Images/Icons/Races/Human.png" alt="/">Human</h1>
-      <hr>
+        <p>At Level 2, choose one of the following abilities and gain it permanently:</p>
+        <br>
 
-      <p>Humans are probably the most versatile of races, and that comes with its own advantages and disadvantages.</p>
-
-      <br>
-      <h2><img class="page-icon" src="Images/Icons/UI/CharacterSetup.png" alt="/">Character Setup</h2>
-      <hr>
-      <br>
-
-      <h3><img class="page-icon" src="Images/Icons/UI/CharacterSetupSub.png" alt="/">Stats and Saves</h3>
-      <hr class="hr-half">
-
-      <p>Choose 2 of the following stats and increase them by 1...</p>
-      <ul>
-        <li>Charisma</li>
-        <li>Intelligence</li>
-        <li>Wisdom</li>
-        <li>Dexterity</li>
-        <li>Fortitude</li>
-      </ul>
-
-
-
-
-
-
-      <hr>
-
-      <p><b>Your <img class="text-symbol" src="Images/Icons/UI/Speed.png" alt="/">Speed is 6 meters meters.</b></p>
-      <p><b>Your starting <img class="text-symbol" src="Images/Icons/UI/Health.png" alt="/">Health is 10.</b></p>
-      <span class="spell-extra">Your total Health will be Class Health + 10 + 2 * Fortitude + (5 for each level after Level 1).</span>
-
-      <br>
-      <br>
-      <br>
-
-      <h3><img class="page-icon" src="Images/Icons/UI/CharacterSetupSub.png" alt="/">Other Things</h3>
-      <hr class="hr-half">
-      <p>If your Intelligence is at least 1, you know one additional Common language.</p>
-      <p>People of your kind live for 80 years and their size is Normal</p>
-      <p><br>You start with 2 extra Skill Points, and you also get +1 in two Skills of choice.</p>
-      <br>
-
-      <h2><img class="page-icon" src="Images/Icons/UI/Charge.png" alt="/">Starting Abilities</h2>
-      <hr>
-
-      <div class="spell-container">
-
-        <div class="spell">
+        <div class="spell spell-talent">
           <div class="spell-left">
-            <img src="Images/Icons/Spells/Human_Vigilence.png">
+            <img src="Images/Icons/Spells/Human_Diversity.png">
           </div>
           <div class="spell-right">
-            <h3 class="spell-name">Human Vigilence <span class="spell-actions-parenthesis">(</span><span class="spell-actions">Passive</span><span class="spell-actions-parenthesis">)</span></h3>
+            <h3 class="spell-name">Human Diversity <span class="spell-actions-parenthesis">(</span><span class="spell-actions">Special</span><span class="spell-actions-parenthesis">)</span></h3>
 
 
 
             <p class="spell-description">
-              Whenever you make a Skill Check, instead of rolling, you can automatically have 7 + your skill modifiers for that check.
+              Choose any other race.<br>Gain the first talent (left-most, first row, aka Level 1 Race Talent) from that race.<br>
 
             </p>
 
@@ -196,39 +226,8 @@
           </div>
         </div>
 
-      </div>
 
-      <br>
-      <br>
-
-      <h2><img class="page-icon" src="Images/Icons/UI/Specializations.png" alt="/">Talents</h2>
-      <hr>
-
-      <p>At Level 2, choose one of the following abilities and gain it permanently:</p>
-      <br>
-
-      <div class="spell spell-talent">
-        <div class="spell-left">
-          <img src="Images/Icons/Spells/Human_Diversity.png">
-        </div>
-        <div class="spell-right">
-          <h3 class="spell-name">Human Diversity <span class="spell-actions-parenthesis">(</span><span class="spell-actions">Special</span><span class="spell-actions-parenthesis">)</span></h3>
-
-
-
-          <p class="spell-description">
-            Choose any other race.<br>Gain the first talent (left-most, first row, aka Level 1 Race Talent) from that race.<br>
-
-          </p>
-
-
-
-
-        </div>
-      </div>
-
-
-    </div> <!-- Page-Content -->
-  </div> <!-- Page-Body -->
-
+      </div> <!-- Page-Content -->
+    </div> <!-- Page-Body -->
+  </div>
 </body>

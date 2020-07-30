@@ -15,8 +15,6 @@
 </head>
 
 <body>
-  <img class="background-image top-left" src="Images/Left.png">
-  <img class="background-image top-right" src="Images/Left.png">
 
 
   <div id="Top-Nav-Wrapper">
@@ -77,8 +75,8 @@
             </div>
           </li>
 
-          <li class="nav-item">
-            <a class="nav-link disabled" href="#">Disabled</a>
+          <li class="nav-item active">
+            <a class="nav-link custom-font" href="Abilities.html">Abilities</a>
           </li>
 
         </ul>
@@ -87,128 +85,202 @@
   </div>
 
 
-  <div id="Page-Body">
+  <div id="Page-Body-Wrapper" style="background-image: url('Images/DefaultBackground.png');">
+    <div id="Page-Body">
 
-    <div id="Sidebar-Nav-Wrapper">
-      <nav id="Sidebar-Nav" class="shadow-dropper">
-        <div class="sidebar-header">
-          <a href="#">Bootstrap Sidebar</a>
-        </div>
+      <div id="Sidebar-Nav-Wrapper">
+        <nav id="Sidebar-Nav" class="shadow-dropper">
+          <div class="sidebar-header">
+            <a href="#">Bootstrap Sidebar</a>
+          </div>
 
-        <ul class="list-unstyled components">
-          <li class="active">
-            <a href="#homeSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Home</a>
-            <ul class="collapse list-unstyled" id="homeSubmenu">
-              <li><a href="#">Home 1</a></li>
-              <li><a href="#">Home 2</a></li>
-              <li><a href="#">Home 3</a></li>
-            </ul>
-          </li>
-          <li>
-            <a href="#">About</a>
-          </li>
-          <li>
-            <a href="#pageSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Pages</a>
-            <ul class="collapse list-unstyled" id="pageSubmenu">
-              <li><a href="#">Page 1</a></li>
-              <li><a href="#">Page 2</a></li>
-              <li><a href="#">Page 3</a></li>
-            </ul>
-          </li>
-          <li>
-            <a href="#">Portfolio</a>
-          </li>
-          <li>
-            <a href="#">Contact</a>
-          </li>
+          <ul class="list-unstyled components">
+            <li class="active">
+              <a href="#homeSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Home</a>
+              <ul class="collapse list-unstyled" id="homeSubmenu">
+                <li><a href="#">Home 1</a></li>
+                <li><a href="#">Home 2</a></li>
+                <li><a href="#">Home 3</a></li>
+              </ul>
+            </li>
+            <li>
+              <a href="#">About</a>
+            </li>
+            <li>
+              <a href="#pageSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Pages</a>
+              <ul class="collapse list-unstyled" id="pageSubmenu">
+                <li><a href="#">Page 1</a></li>
+                <li><a href="#">Page 2</a></li>
+                <li><a href="#">Page 3</a></li>
+              </ul>
+            </li>
+            <li>
+              <a href="#">Portfolio</a>
+            </li>
+            <li>
+              <a href="#">Contact</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+
+      <div id="Page-Content">
+
+        <h1><img class="page-icon" src="Images/Icons/Races/Dragonborn.png" alt="/">Dragonborn</h1>
+        <hr>
+
+        <p>Dragonborns are dragon-like humanoids.</p>
+
+        <br>
+        <h2><img class="page-icon" src="Images/Icons/UI/CharacterSetup.png" alt="/">Character Setup</h2>
+        <hr>
+        <br>
+
+        <h3><img class="page-icon" src="Images/Icons/UI/CharacterSetupSub.png" alt="/">Stats and Saves</h3>
+        <hr class="hr-half">
+
+        <p>Choose 2 of the following stats and increase them by 1...</p>
+        <ul>
+          <li>Charisma</li>
+          <li>Intelligence</li>
+          <li>Wisdom</li>
+          <li>Fortitude</li>
         </ul>
-      </nav>
-    </div>
 
-    <div id="Page-Content">
-
-      <h1><img class="page-icon" src="Images/Icons/Races/Dragonborn.png" alt="/">Dragonborn</h1>
-      <hr>
-
-      <p>Dragonborns are dragon-like humanoids.</p>
-
-      <br>
-      <h2><img class="page-icon" src="Images/Icons/UI/CharacterSetup.png" alt="/">Character Setup</h2>
-      <hr>
-      <br>
-
-      <h3><img class="page-icon" src="Images/Icons/UI/CharacterSetupSub.png" alt="/">Stats and Saves</h3>
-      <hr class="hr-half">
-
-      <p>Choose 2 of the following stats and increase them by 1...</p>
-      <ul>
-        <li>Charisma</li>
-        <li>Intelligence</li>
-        <li>Wisdom</li>
-        <li>Fortitude</li>
-      </ul>
-
-      <p>Or choose 1 of these and increase it by 1:</p>
-      <ul>
-        <li>Dexterity</li>
-      </ul>
+        <p>Or choose 1 of these and increase it by 1:</p>
+        <ul>
+          <li>Dexterity</li>
+        </ul>
 
 
 
-      <br>
-      <p>As a Dragonborn, you have the following:</p>
-      <ul>
-        <li>+1 Fortitude Saves</li>
-        <li>+1 Intelligence Saves</li>
-      </ul>
+        <br>
+        <p>As a Dragonborn, you have the following:</p>
+        <ul>
+          <li>+1 Fortitude Saves</li>
+          <li>+1 Intelligence Saves</li>
+        </ul>
 
 
 
-      <br>
-      <p>You also have:</p>
-      <ul>
-        <li>1 Arcana</li>
-        <li>1 Athletics</li>
-        <li>1 Intimidation</li>
-        <li>-1 Stealth</li>
-        <li>-1 Luck</li>
-        <li>-1 Nature</li>
-      </ul>
+        <br>
+        <p>You also have:</p>
+        <ul>
+          <li>1 Arcana</li>
+          <li>1 Athletics</li>
+          <li>1 Intimidation</li>
+          <li>-1 Stealth</li>
+          <li>-1 Luck</li>
+          <li>-1 Nature</li>
+        </ul>
 
 
-      <hr>
+        <hr>
 
-      <p><b>Your <img class="text-symbol" src="Images/Icons/UI/Speed.png" alt="/">Speed is 6 meters meters.</b></p>
-      <p><b>Your starting <img class="text-symbol" src="Images/Icons/UI/Health.png" alt="/">Health is 11.</b></p>
-      <span class="spell-extra">Your total Health will be Class Health + 11 + 2 * Fortitude + (5 for each level after Level 1).</span>
+        <p><b>Your <img class="text-symbol" src="Images/Icons/UI/Speed.png" alt="/">Speed is 6 meters meters.</b></p>
+        <p><b>Your starting <img class="text-symbol" src="Images/Icons/UI/Health.png" alt="/">Health is 11.</b></p>
+        <span class="spell-extra">Your total Health will be Class Health + 11 + 2 * Fortitude + (5 for each level after Level 1).</span>
 
-      <br>
-      <br>
-      <br>
+        <br>
+        <br>
+        <br>
 
-      <h3><img class="page-icon" src="Images/Icons/UI/CharacterSetupSub.png" alt="/">Other Things</h3>
-      <hr class="hr-half">
-      <p>If your Intelligence is at least 1, you can speak 1 Draconic, the ancient language of dragons.</p>
-      <p>People of your kind live for 80 years and their size is undefined</p>
-      <p><br>Dragonborn have tails.</p>
-      <br>
+        <h3><img class="page-icon" src="Images/Icons/UI/CharacterSetupSub.png" alt="/">Other Things</h3>
+        <hr class="hr-half">
+        <p>If your Intelligence is at least 1, you can speak 1 Draconic, the ancient language of dragons.</p>
+        <p>People of your kind live for 80 years and their size is undefined</p>
+        <p><br>Dragonborn have tails.</p>
+        <br>
 
-      <h2><img class="page-icon" src="Images/Icons/UI/Charge.png" alt="/">Starting Abilities</h2>
-      <hr>
+        <h2><img class="page-icon" src="Images/Icons/UI/Charge.png" alt="/">Starting Abilities</h2>
+        <hr>
 
-      <div class="spell-container">
+        <div class="spell-container">
 
-        <div class="spell">
+          <div class="spell">
+            <div class="spell-left">
+              <img src="Images/Icons/Spells/Draconic_Ancestry.png">
+            </div>
+            <div class="spell-right">
+              <h3 class="spell-name">Draconic Ancestry <span class="spell-actions-parenthesis">(</span><span class="spell-actions">Special</span><span class="spell-actions-parenthesis">)</span></h3>
+
+
+
+              <p class="spell-description">
+                When creating your character, choose your Dragonborn type:<br>Black - Acid<br>Blue - Cold<br>Brass - Fire<br>Bronze - Thunder<br>Gold - Fire<br>Red - Fire<br>Silver - Force<br>Gray - Necrotic<br>White - Cold<br>Green - Poison<br>That becomes your Dragonborn Element.<br>
+
+              </p>
+
+
+
+
+            </div>
+          </div>
+
+
+          <div class="spell">
+            <div class="spell-left">
+              <img src="Images/Icons/Spells/Dragonborn_Resistance.png">
+            </div>
+            <div class="spell-right">
+              <h3 class="spell-name">Dragonborn Resistance <span class="spell-actions-parenthesis">(</span><span class="spell-actions">Passive</span><span class="spell-actions-parenthesis">)</span></h3>
+
+
+
+              <p class="spell-description">
+                You have 50% resistance to damage of your Dragonborn Element type.
+
+              </p>
+
+
+
+
+            </div>
+          </div>
+
+
+          <div class="spell">
+            <div class="spell-left">
+              <img src="Images/Icons/Spells/Dragon's_Breath.png">
+            </div>
+            <div class="spell-right">
+              <h3 class="spell-name">Dragon's Breath <span class="spell-actions-parenthesis">(</span><span class="spell-actions">1 Action</span><span class="spell-actions-parenthesis">)</span></h3>
+
+
+              <p><span class="spell-text-property spell-property"><img class="text-symbol" src="Images/Icons/UI/Cooldown.png" alt="/"></span> Long Rest</p>
+              <p class="spell-description">
+                Breathe your Dragonborn Element in a 3x1 meter line.<br>Make an attack against all creatures caught in your breath.<br>The attack deals 2d8 damage of your Dragonborn Element (against their Defense).<br>
+
+              </p>
+
+
+
+
+            </div>
+          </div>
+
+        </div>
+
+        <br>
+        <br>
+
+        <h2><img class="page-icon" src="Images/Icons/UI/Specializations.png" alt="/">Talents</h2>
+        <hr>
+
+        <p>At Level 2, choose one of the following abilities and gain it permanently:</p>
+        <br>
+
+        <div class="spell spell-talent">
           <div class="spell-left">
-            <img src="Images/Icons/Spells/Draconic_Ancestry.png">
+            <img src="Images/Icons/Spells/Breath_-_Cone.png">
           </div>
           <div class="spell-right">
-            <h3 class="spell-name">Draconic Ancestry <span class="spell-actions-parenthesis">(</span><span class="spell-actions">Special</span><span class="spell-actions-parenthesis">)</span></h3>
+            <h3 class="spell-name">Breath - Cone <span class="spell-actions-parenthesis">(</span><span class="spell-actions">Special</span><span class="spell-actions-parenthesis">)</span></h3>
 
 
 
             <p class="spell-description">
-              When creating your character, choose your Dragonborn type:<br>Black - Acid<br>Blue - Cold<br>Brass - Fire<br>Bronze - Thunder<br>Gold - Fire<br>Red - Fire<br>Silver - Force<br>Gray - Necrotic<br>White - Cold<br>Green - Poison<br>That becomes your Dragonborn Element.<br>
+              Your Dragon's Breath now breathes in a 3 meter, 45* cone instead of a line.
 
             </p>
 
@@ -219,17 +291,17 @@
         </div>
 
 
-        <div class="spell">
+        <div class="spell spell-talent">
           <div class="spell-left">
-            <img src="Images/Icons/Spells/Dragonborn_Resistance.png">
+            <img src="Images/Icons/Spells/Breath_-_Line.png">
           </div>
           <div class="spell-right">
-            <h3 class="spell-name">Dragonborn Resistance <span class="spell-actions-parenthesis">(</span><span class="spell-actions">Passive</span><span class="spell-actions-parenthesis">)</span></h3>
+            <h3 class="spell-name">Breath - Line <span class="spell-actions-parenthesis">(</span><span class="spell-actions">Special</span><span class="spell-actions-parenthesis">)</span></h3>
 
 
 
             <p class="spell-description">
-              You have 50% resistance to damage of your Dragonborn Element type.
+              Your Dragon's Breath now breathes in a 4x2 meter line.
 
             </p>
 
@@ -240,17 +312,17 @@
         </div>
 
 
-        <div class="spell">
+        <div class="spell spell-talent">
           <div class="spell-left">
-            <img src="Images/Icons/Spells/Dragon's_Breath.png">
+            <img src="Images/Icons/Spells/Breath_-_Blast.png">
           </div>
           <div class="spell-right">
-            <h3 class="spell-name">Dragon's Breath <span class="spell-actions-parenthesis">(</span><span class="spell-actions">1 Action</span><span class="spell-actions-parenthesis">)</span></h3>
+            <h3 class="spell-name">Breath - Blast <span class="spell-actions-parenthesis">(</span><span class="spell-actions">Special</span><span class="spell-actions-parenthesis">)</span></h3>
 
 
-            <p><span class="spell-text-property spell-property"><img class="text-symbol" src="Images/Icons/UI/Cooldown.png" alt="/"></span> Long Rest</p>
+
             <p class="spell-description">
-              Breathe your Dragonborn Element in a 3x1 meter line.<br>Make an attack against all creatures caught in your breath.<br>The attack deals 2d8 damage of your Dragonborn Element (against their Defense).<br>
+              Your Dragon's Breath now breathes on all creatures around you instead of a line.
 
             </p>
 
@@ -260,81 +332,8 @@
           </div>
         </div>
 
-      </div>
 
-      <br>
-      <br>
-
-      <h2><img class="page-icon" src="Images/Icons/UI/Specializations.png" alt="/">Talents</h2>
-      <hr>
-
-      <p>At Level 2, choose one of the following abilities and gain it permanently:</p>
-      <br>
-
-      <div class="spell spell-talent">
-        <div class="spell-left">
-          <img src="Images/Icons/Spells/Breath_-_Cone.png">
-        </div>
-        <div class="spell-right">
-          <h3 class="spell-name">Breath - Cone <span class="spell-actions-parenthesis">(</span><span class="spell-actions">Special</span><span class="spell-actions-parenthesis">)</span></h3>
-
-
-
-          <p class="spell-description">
-            Your Dragon's Breath now breathes in a 3 meter, 45* cone instead of a line.
-
-          </p>
-
-
-
-
-        </div>
-      </div>
-
-
-      <div class="spell spell-talent">
-        <div class="spell-left">
-          <img src="Images/Icons/Spells/Breath_-_Line.png">
-        </div>
-        <div class="spell-right">
-          <h3 class="spell-name">Breath - Line <span class="spell-actions-parenthesis">(</span><span class="spell-actions">Special</span><span class="spell-actions-parenthesis">)</span></h3>
-
-
-
-          <p class="spell-description">
-            Your Dragon's Breath now breathes in a 4x2 meter line.
-
-          </p>
-
-
-
-
-        </div>
-      </div>
-
-
-      <div class="spell spell-talent">
-        <div class="spell-left">
-          <img src="Images/Icons/Spells/Breath_-_Blast.png">
-        </div>
-        <div class="spell-right">
-          <h3 class="spell-name">Breath - Blast <span class="spell-actions-parenthesis">(</span><span class="spell-actions">Special</span><span class="spell-actions-parenthesis">)</span></h3>
-
-
-
-          <p class="spell-description">
-            Your Dragon's Breath now breathes on all creatures around you instead of a line.
-
-          </p>
-
-
-
-
-        </div>
-      </div>
-
-
-    </div> <!-- Page-Content -->
-  </div> <!-- Page-Body -->
-
+      </div> <!-- Page-Content -->
+    </div> <!-- Page-Body -->
+  </div>
 </body>
