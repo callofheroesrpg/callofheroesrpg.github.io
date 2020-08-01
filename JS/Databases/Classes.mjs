@@ -33,7 +33,8 @@ let Classes = {
       "Every Level": [
         "+5 Health",
         "+1 Skill Point",
-        "+1 extra known Spell or Maneuver"
+        "+1 extra known Spell or Maneuver",
+        "+1 extra maximum Charge"
       ],
       "Other": "At levels 2, 4, 6, 8 and 10, you gain a Talent from your chosen specialization.\nAt levels 3, 5, 7 and 9 you gain 1 extra Charge and a Talent from your race.\n"
     },
@@ -317,7 +318,8 @@ let Classes = {
       "Every Level": [
         "+5 Health",
         "+1 Skill Point",
-        "+1 extra known Spell or Maneuver"
+        "+1 extra known Spell or Maneuver",
+        "+1 extra maximum Charge"
       ],
       "Other": "At levels 2, 4, 6, 8 and 10, you gain a Talent from your chosen specialization.\nAt levels 3, 5, 7 and 9 you gain 1 extra Charge and a Talent from your race.\n"
     },
@@ -621,7 +623,8 @@ let Classes = {
       "Every Level": [
         "+5 Health",
         "+1 Skill Point",
-        "+1 extra known Spell or Maneuver"
+        "+1 extra known Spell or Maneuver",
+        "+1 extra maximum Charge"
       ],
       "Other": "At levels 2, 4, 6, 8 and 10, you gain a Talent from your chosen specialization.\nAt levels 3, 5, 7 and 9 you gain 1 extra Charge and a Talent from your race.\n"
     },
@@ -873,7 +876,8 @@ let Classes = {
       "Every Level": [
         "+5 Health",
         "+1 Skill Point",
-        "+1 extra known Spell or Maneuver"
+        "+1 extra known Spell or Maneuver",
+        "+1 extra maximum Charge"
       ],
       "Other": "At levels 2, 4, 6, 8 and 10, you gain a Talent from your chosen specialization.\nAt levels 3, 5, 7 and 9 you gain 1 extra Charge and a Talent from your race.\n"
     },
@@ -1119,7 +1123,8 @@ let Classes = {
       "Every Level": [
         "+6 Health",
         "+1 Skill Point",
-        "+1 extra known Spell or Maneuver"
+        "+1 extra known Spell or Maneuver",
+        "+1 extra maximum Charge"
       ],
       "Other": "At levels 2, 4, 6, 8 and 10, you gain a Talent from your chosen specialization.\nAt levels 3, 5, 7 and 9 you gain 1 extra Charge and a Talent from your race.\n"
     },
@@ -1357,7 +1362,8 @@ let Classes = {
       "Every Level": [
         "+5 Health",
         "+1 Skill Point",
-        "+1 extra known Spell or Maneuver"
+        "+1 extra known Spell or Maneuver",
+        "+1 extra maximum Charge"
       ],
       "Other": "At levels 2, 4, 6, 8 and 10, you gain a Talent from your chosen specialization.\nAt levels 3, 5, 7 and 9 you gain 1 extra Charge and a Talent from your race.\n"
     },
@@ -1569,7 +1575,8 @@ let Classes = {
       "Every Level": [
         "+5 Health",
         "+1 Skill Point",
-        "+1 extra known Spell or Maneuver"
+        "+1 extra known Spell or Maneuver",
+        "+1 extra maximum Charge"
       ],
       "Other": "At levels 2, 4, 6, 8 and 10, you gain a Talent from your chosen specialization.\nAt levels 3, 5, 7 and 9 you gain 1 extra Charge and a Talent from your race.\n"
     },
@@ -2129,7 +2136,8 @@ let Classes = {
       "Every Level": [
         "+5 Health",
         "+1 Skill Point",
-        "+1 extra known Spell or Maneuver"
+        "+1 extra known Spell or Maneuver",
+        "+1 extra maximum Charge"
       ],
       "Other": "At levels 2, 4, 6, 8 and 10, you gain a Talent from your chosen specialization.\nAt levels 3, 5, 7 and 9 you gain 1 extra Charge and a Talent from your race.\n"
     },
