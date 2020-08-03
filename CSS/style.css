@@ -47,6 +47,9 @@ h2 {
 .dropdown:hover .dropdown-content {
     display: block;
 }
+.dropdown-content--lefter {
+    left: -60px;
+}
 
 
 

@@ -1,5 +1,5 @@
 <head>
-  <title>Skill Points Shop</title>
+  <title>Spell Sheet Maker</title>
   <link rel="icon" type="image/png" href="favicon.png">
   <meta charset="utf-8">
   <meta name="description" content="">
@@ -112,188 +112,62 @@
     <div id="Page-Body">
       <div id="Page-Content">
 
-        <h1><img class="page-icon" src="Images/Icons/UI/BlueCircle.png" alt="/">Skill Points Shop</h3>
-          <hr>
+        <h1 style="text-align: center">Spell Sheet Maker</h1>
+        <hr>
 
-          <table style="width: 500px;">
-            <tr>
-              <th>Boosts</th>
-              <th>Price</th>
-            </tr>
+        <div id="InputWrapper">
+          <div class="autocomplete" style="width:300px;">
+            <input id="Input" type="text" placeholder="Search your spell here...">
+            <button class="Button" id="AddSpell" onclick="queueSpell()">Add</button>
+          </div>
+        </div>
+        <div id="AddedSpellsWrapper">
+          <select multiple id="AddedSpells">
 
-            <tr>
-              <td>
-                <span>Training in Unarmed Combat</span>
-              </td>
-              <td>
-                <span>1 Skill Point</span>
-              </td>
-            </tr>
+          </select>
+        </div>
+        <div id="ButtonsWrapper">
+          <button class="Button" id="Reset" onclick="resetSpells()" title="Click here to reset everything.">Reset</button>
+          <button class="Button" id="RemoveSpell" onclick="removeSpell()" title="Click here to remove the selected spell">Remove Spell</button>
+        </div>
+        <div id="GenerateDownloadWrapper">
+          <button class="Button" id="Generate" onclick="generate()" title="When you are done adding spells, click Generate! to get your awesome spell sheets!">Generate!</button>
+          <button class="Button" id="Download" onclick="download()" title="You need to generate the spell sheets first!">Download</button>
+        </div>
+        <div id="CanvasWrapper"></div>
 
+        <link href="CSS/auto-complete.css" rel="stylesheet">
+        <link href="CSS/spell-sheet-maker.css" rel="stylesheet">
 
-            <tr>
-              <td>
-                <span>Training in 1-Handed Melee Weapons</span>
-              </td>
-              <td>
-                <span>1 Skill Point</span>
-              </td>
-            </tr>
+        <script type="module" src="JS/SpellSheetMaker/AutoComplete.mjs"></script>
 
+        <script src="JS/Dependencies/FileSaver.js"></script>
+        <script src="JS/Dependencies/jszip.min.js"></script>
+        <script src="JS/Dependencies/reimg.js"></script>
+        <script src="JS/Dependencies/utils.js"></script>
 
-            <tr>
-              <td>
-                <span>Training in 2-Handed Melee Weapons</span>
-              </td>
-              <td>
-                <span>1 Skill Point</span>
-              </td>
-            </tr>
+        <script type="module">
+          import Abilities from "./JS/Databases/Abilities.mjs"
+          import {
+            AutoCompleter
+          } from "./JS/SpellSheetMaker/AutoComplete.mjs"
 
-
-            <tr>
-              <td>
-                <span>Training in 1-Handed Ranged Weapons</span>
-              </td>
-              <td>
-                <span>1 Skill Point</span>
-              </td>
-            </tr>
-
-
-            <tr>
-              <td>
-                <span>Training in 2-Handed Ranged Weapons</span>
-              </td>
-              <td>
-                <span>1 Skill Point</span>
-              </td>
-            </tr>
-
-
-            <tr>
-              <td>
-                <span>Training in Finesse Weapons</span>
-              </td>
-              <td>
-                <span>1 Skill Point</span>
-              </td>
-            </tr>
-
-
-            <tr>
-              <td>
-                <span>Training in Melee Dual Wielding</span>
-              </td>
-              <td>
-                <span>1 Skill Point</span>
-              </td>
-            </tr>
-
-
-            <tr>
-              <td>
-                <span>Training in Ranged Dual Wielding</span>
-              </td>
-              <td>
-                <span>1 Skill Point</span>
-              </td>
-            </tr>
-
-
-            <tr>
-              <td>
-                <span>Training in Shields</span>
-              </td>
-              <td>
-                <span>1 Skill Point</span>
-              </td>
-            </tr>
-
-
-            <tr>
-              <td>
-                <span>Training in a Special Weapon</span>
-              </td>
-              <td>
-                <span>1 Skill Point</span>
-              </td>
-            </tr>
-
-
-            <tr>
-              <td>
-                <span>Training in Normal Riding</span>
-              </td>
-              <td>
-                <span>1 Skill Point</span>
-              </td>
-            </tr>
-
-
-            <tr>
-              <td>
-                <span>Training in Exotic Riding</span>
-              </td>
-              <td>
-                <span>2 Skill Points</span>
-              </td>
-            </tr>
-
-
-            <tr>
-              <td>
-                <span>Training in Land Vehicle Driving</span>
-              </td>
-              <td>
-                <span>1 Skill Point</span>
-              </td>
-            </tr>
-
-
-            <tr>
-              <td>
-                <span>Training in Sailing</span>
-              </td>
-              <td>
-                <span>1 Skill Point</span>
-              </td>
-            </tr>
-
-
-            <tr>
-              <td>
-                <span>+1 to any skill</span>
-              </td>
-              <td>
-                <span>1 Skill Point</span>
-              </td>
-            </tr>
-
-
-            <tr>
-              <td>
-                <span>Any Common Language</span>
-              </td>
-              <td>
-                <span>1 Skill Point</span>
-              </td>
-            </tr>
-
-
-            <tr>
-              <td>
-                <span>Any Wild, Elemental or Higher Language</span>
-              </td>
-              <td>
-                <span>2 Skill Points</span>
-              </td>
-            </tr>
-
-          </table>
+          window.autoCompleter = new AutoCompleter(
+            document.querySelector('.autocomplete'),
+            document.querySelector('#Input'),
+            Object.keys(Abilities)
+          )
+          console.log({
+            Abilities
+          })
+          window.Spells = Abilities
+          console.log(window.Spells)
+          console.log(1)
+        </script>
+        <script src="JS/SpellSheetMaker/scripts.js"></script>
+        <script src="JS/SpellSheetMaker/canvas.js"></script>
 
       </div> <!-- Page-Content -->
-
     </div> <!-- Page-Body -->
   </div>
 </body>
