@@ -1664,9 +1664,7 @@ let Classes = {
       "~Animal Spirit~": {
         "A": "Special",
         "Effect": "Choose one of the 4 animal spirits. You gain an Ability and a bonus to a Skill Check depending on your Spirit Animal.\nBear - You gain Bear's Roar and +2 to Athletics.\nWolf - You gain Wolf's Leap and +2 to Intimidation.\nEagle - You gain Eagle's Sight and +2 to Perception.\nOwl - You gain Owl's Foresight and +2 to Knowledge.\n"
-      }
-    },
-    "Abilities": {
+      },
       "~Bear's Roar~": {
         "A": "1 Action",
         "Cooldown": "Long Rest",
