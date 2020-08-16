@@ -56,8 +56,12 @@ let Abilities = {
   "Shapeshift": {
     "A": "1 Action",
     "Cost": "1 Charge",
-    "Effect": "Pick an animal from the Animal Pets and Shapeshift Animals list and instantly transform into it.\nYou gain that animal's Fortitude and Dexterity saves.\nApply any other modifiers (except for base Stats) from that animal.\nYou also gain its exact abilities.\nAttacking while Shapeshifted has the same attack bonus, damage, weapon effect, etc as your normal attacking weapon.\nSo, while Shapeshifted, you can perform normal *melee* weapon attacks as if you were not Shapeshifted.\nWhile Shapeshifted, you can do any maneuvers you know. You can't cast spells.\nWhen you Shapeshift, your Health stays the same, unless the animal states it has a bonus/minus to Health.\nWhen Shapeshift ends, subtract back whatever health you added, or add back whatever health you subtracted.\nWhen you end Shapeshift, if your health would be 0 or less, it stays at 1.\nShapeshift ends if you drop to 0 Health, and you go Unconscious.\nAt first, you can't choose innately swimming or flying animals.\nFrom level 4, you can transform into innately swimming animals.\nFrom level 8, you can transform into innately flying animals.\n",
+    "Effect": "Pick an animal from the Animal Pets and Shapeshift Animals list and instantly transform into it.\nYou gain that animal's Fortitude and Dexterity saves.\nApply any other modifiers (except for base Stats) from that animal.\nYou also gain its exact abilities.\nWhile Shapeshifted, you can do Animal Attack.\nWhile Shapeshifted, you can do any maneuvers you know. You can't cast spells.\nWhen you Shapeshift, your Health stays the same, unless the animal states it has a bonus/minus to Health.\nWhen Shapeshift ends, subtract back whatever health you added, or add back whatever health you subtracted.\nWhen you end Shapeshift, if your health would be 0 or less, it stays at 1.\nShapeshift ends if you drop to 0 Health, and you go Unconscious.\nAt first, you can't choose innately swimming or flying animals.\nFrom level 4, you can transform into innately swimming animals.\nFrom level 8, you can transform into innately flying animals.\n",
     "Notes": "You can't make attacks with ranged weapons while Shapeshifted (obviously).\nYou choose what items you keep on you when Shapeshifting, and those items are 'merged' into your new form.\nYou can turn back into your humanoid form for 0 Actions (on your turn).\n"
+  },
+  "Animal Attack": {
+    "A": "1 Action",
+    "Effect": "Make a melee attack against a creature for 2d8 + Animal's Strength or Dexterity.\n"
   },
   "Old Ritualist": {
     "A": "10 minutes",
@@ -458,7 +462,8 @@ let Abilities = {
   "Power Tap": {
     "A": "Depends",
     "Cooldown": "Long Rest",
-    "Effect": "Cast an ability one of your Allies has (with that ability's actions and costs and your modifiers)."
+    "Effect": "Cast an ability one of your Allies has (with that ability's actions and costs and your modifiers).",
+    "Notes": "Does not work on Passives. The Ability must have 0, 0.5 or 1 Actions cost."
   },
   "Fey Patron": {
     "A": "Passive",
@@ -972,7 +977,7 @@ let Abilities = {
   "Fire Bolt": {
     "A": "1 Action",
     "Range": "3 meters",
-    "Effect": "Make a Spell attack that deals deal 3d8 Fire damage.",
+    "Effect": "Make a Spell attack that deals deal 3d6 + Main Stat Fire damage.",
     "Variant": "Inflict Wounds (Necrotic damage).",
     "category": "Elemental"
   },

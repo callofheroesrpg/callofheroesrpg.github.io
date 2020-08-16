@@ -403,8 +403,12 @@ let Classes = {
       "~Shapeshift~": {
         "A": "1 Action",
         "Cost": "1 Charge",
-        "Effect": "Pick an animal from the Animal Pets and Shapeshift Animals list and instantly transform into it.\nYou gain that animal's Fortitude and Dexterity saves.\nApply any other modifiers (except for base Stats) from that animal.\nYou also gain its exact abilities.\nAttacking while Shapeshifted has the same attack bonus, damage, weapon effect, etc as your normal attacking weapon.\nSo, while Shapeshifted, you can perform normal *melee* weapon attacks as if you were not Shapeshifted.\nWhile Shapeshifted, you can do any maneuvers you know. You can't cast spells.\nWhen you Shapeshift, your Health stays the same, unless the animal states it has a bonus/minus to Health.\nWhen Shapeshift ends, subtract back whatever health you added, or add back whatever health you subtracted.\nWhen you end Shapeshift, if your health would be 0 or less, it stays at 1.\nShapeshift ends if you drop to 0 Health, and you go Unconscious.\nAt first, you can't choose innately swimming or flying animals.\nFrom level 4, you can transform into innately swimming animals.\nFrom level 8, you can transform into innately flying animals.\n",
+        "Effect": "Pick an animal from the Animal Pets and Shapeshift Animals list and instantly transform into it.\nYou gain that animal's Fortitude and Dexterity saves.\nApply any other modifiers (except for base Stats) from that animal.\nYou also gain its exact abilities.\nWhile Shapeshifted, you can do Animal Attack.\nWhile Shapeshifted, you can do any maneuvers you know. You can't cast spells.\nWhen you Shapeshift, your Health stays the same, unless the animal states it has a bonus/minus to Health.\nWhen Shapeshift ends, subtract back whatever health you added, or add back whatever health you subtracted.\nWhen you end Shapeshift, if your health would be 0 or less, it stays at 1.\nShapeshift ends if you drop to 0 Health, and you go Unconscious.\nAt first, you can't choose innately swimming or flying animals.\nFrom level 4, you can transform into innately swimming animals.\nFrom level 8, you can transform into innately flying animals.\n",
         "Notes": "You can't make attacks with ranged weapons while Shapeshifted (obviously).\nYou choose what items you keep on you when Shapeshifting, and those items are 'merged' into your new form.\nYou can turn back into your humanoid form for 0 Actions (on your turn).\n"
+      },
+      "~Animal Attack~": {
+        "A": "1 Action",
+        "Effect": "Make a melee attack against a creature for 2d8 + Animal's Strength or Dexterity.\n"
       }
     },
     "Specializations": {
@@ -1791,7 +1795,7 @@ let Classes = {
           "~Ancient Dance~": {
             "A": "10 minutes",
             "Cost": "1 Charge",
-            "Effect": "With this ancient Dance you can either heal an ally, or damage a foe.\no Heal: You can heal an ally who was damaged by a certain creature.\nConsuming a bone of that creature, an organ or a cup of its blood, you can heal the ally for 3d6 Health.\no Damage: Gather and consume a piece of hair or body part of a creature.\nYou damage that creature for 3d8 Psychic damage.\nWith Ancient Dance, you can only heal once per Long Rest, and damage once per Long Rest.\n"
+            "Effect": "With this ancient Dance you can either heal an ally, or damage a foe.\no Heal: You can heal an ally who was damaged by a certain creature.\nConsuming a bone of that creature, an organ or a cup of its blood, you can heal the ally for 3d6 Health.\no Damage: Gather and consume a piece of hair or body part of a creature.\nYou damage that creature for 3d8 + 2 Psychic damage (not against Defense).\nWith Ancient Dance, you can only heal once per Long Rest, and damage once per Long Rest.\n"
           }
         },
         "Talents": {
@@ -1933,7 +1937,8 @@ let Classes = {
       "~Power Tap~": {
         "A": "Depends",
         "Cooldown": "Long Rest",
-        "Effect": "Cast an ability one of your Allies has (with that ability's actions and costs and your modifiers)."
+        "Effect": "Cast an ability one of your Allies has (with that ability's actions and costs and your modifiers).",
+        "Notes": "Does not work on Passives. The Ability must have 0, 0.5 or 1 Actions cost."
       }
     },
     "Other": "When creating your character, choose one type of being you serve. That being is called your Patron:\n- Fey Patron, a wild, outworldly being, heavily magical or in tune with nature, and often outward strange. A Fey Patron often represents an old god of nature or magic, resembled by a magical animal or humanoid.\n- Celestial Patron, a being from a divine plain. Portrayed as angels or divine spirits of life and death\n- Demon or Devil patron, a being residing in Hell, an archdevil or lord in hell\n- Old God Patron, an eldritch being of nightmare and terror, whose thoughts, form and wants are incomprehensible to most people\n",
