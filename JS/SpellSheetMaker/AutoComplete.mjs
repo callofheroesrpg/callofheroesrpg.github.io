@@ -1,6 +1,6 @@
 
 
-
+const capitalizeEachWord = str => str.split(' ').map(word => word[0].toUpperCase() + word.substring(1)).join(' ')
 const highlight = dom => dom ? dom.classList.add('auto-complete-list--highlighted') : null
 const unhighlight = dom => dom ? dom.classList.remove('auto-complete-list--highlighted') : null
 const createLi = (content, index, clickListener) => {
@@ -65,12 +65,13 @@ export class AutoCompleter {
 
     enter() {
         let chosen = this.__getHighlightedElement()
-        this.input.value = chosen.innerText
+        this.input.toLowerCase() = chosen.innerText.toLowerCase()
         this.close()
     }
 
     updateList() {
-        const filterTagListByString = string => this.tagList.filter(tag => tag.includes(string))
+        const upperCasedString = capitalizeEachWord(string)
+        const filterTagListByString = string => this.tagList.filter(tag => tag.includes(string) || tag.includes(upperCasedString))
         const regenerateList = newAutoCompleteList => {
             this.autoCompleteList.innerHTML = ''
             for (let i = 0; i < newAutoCompleteList.length; i++) {
@@ -115,10 +116,12 @@ export class AutoCompleter {
         this.autoCompleteList.classList.remove('auto-complete-list--hidden')
         this.isOpen = true
     }
+
     close(){
         this.autoCompleteList.classList.add('auto-complete-list--hidden')
         this.isOpen = false
     }
+    
     unhighlightCurrentlyHighlighted() {
         unhighlight(this.__getHighlightedElement())
     }

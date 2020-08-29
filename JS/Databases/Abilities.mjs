@@ -53,15 +53,15 @@ let Abilities = {
     "A": "Depends",
     "Effect": "You can create harmless sensory effects or tiny weather effects (6 meters range).\nYou can massively speed up the growth of small plants (touch range).\nYou can slightly soothe physical pains (with no combat effect) (touch range).\nYou can attempt to communicate simple ideas with animals and plants (3 meters range).\nYou have +3 on rolls for identifying plants.\nYou can do these even while Shapeshifted.\n"
   },
+  "Animal Attack": {
+    "A": "1 Action",
+    "Effect": "Make a melee attack against a creature for 2d8 + Animal's Strength or Dexterity.\n"
+  },
   "Shapeshift": {
     "A": "1 Action",
     "Cost": "1 Charge",
     "Effect": "Pick an animal from the Animal Pets and Shapeshift Animals list and instantly transform into it.\nYou gain that animal's Fortitude and Dexterity saves.\nApply any other modifiers (except for base Stats) from that animal.\nYou also gain its exact abilities.\nWhile Shapeshifted, you can do Animal Attack.\nWhile Shapeshifted, you can do any maneuvers you know. You can't cast spells.\nWhen you Shapeshift, your Health stays the same, unless the animal states it has a bonus/minus to Health.\nWhen Shapeshift ends, subtract back whatever health you added, or add back whatever health you subtracted.\nWhen you end Shapeshift, if your health would be 0 or less, it stays at 1.\nShapeshift ends if you drop to 0 Health, and you go Unconscious.\nAt first, you can't choose innately swimming or flying animals.\nFrom level 4, you can transform into innately swimming animals.\nFrom level 8, you can transform into innately flying animals.\n",
     "Notes": "You can't make attacks with ranged weapons while Shapeshifted (obviously).\nYou choose what items you keep on you when Shapeshifting, and those items are 'merged' into your new form.\nYou can turn back into your humanoid form for 0 Actions (on your turn).\n"
-  },
-  "Animal Attack": {
-    "A": "1 Action",
-    "Effect": "Make a melee attack against a creature for 2d8 + Animal's Strength or Dexterity.\n"
   },
   "Old Ritualist": {
     "A": "10 minutes",
@@ -504,7 +504,7 @@ let Abilities = {
   },
   "Hexstaff": {
     "A": "Passive",
-    "Effect": "Your ~Hexblade~ Ability is changed and now has the following effect:\nAfter you attack with a weapon, your next spell has +1 DC and deals +1d4 damage.\n",
+    "Effect": "Your ~Hexblade~ Ability is changed and now has the following effect:\nAfter you attack with a weapon, your next offensive spell has +1 DC and deals +1d4 damage.\n",
     "isTalent": true
   },
   "Doublehex": {
