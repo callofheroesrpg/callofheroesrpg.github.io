@@ -1,13 +1,15 @@
 {
   "files": {
-    "main.css": "/static/css/main.7b607156.css",
-    "main.js": "/static/js/main.0c37c4b4.js",
+    "main.css": "/static/css/main.b4d3fe26.css",
+    "main.js": "/static/js/main.270d1aa7.js",
     "static/js/787.d1738b5e.chunk.js": "/static/js/787.d1738b5e.chunk.js",
     "static/media/paper-texture-page-desaturated.png": "/static/media/paper-texture-page-desaturated.3798b3bb6d47fd0b400d.png",
     "static/media/LinLibertine_R.ttf": "/static/media/LinLibertine_R.f92a89be4241d7c2a459.ttf",
+    "static/media/ParchmentTexture.png": "/static/media/ParchmentTexture.482f43ad210f7e911885.png",
     "static/media/InknutAntiqua-Light.ttf": "/static/media/InknutAntiqua-Light.e41ba9e651e8c9438a8d.ttf",
     "static/media/RobotoCondensed-Regular.ttf": "/static/media/RobotoCondensed-Regular.fc3d2f2e3a203d0037c1.ttf",
     "static/media/RobotoCondensed-Bold.ttf": "/static/media/RobotoCondensed-Bold.c5fe6deebafaec078e64.ttf",
+    "static/media/DancingScript-VariableFont_wght.ttf": "/static/media/DancingScript-VariableFont_wght.e6757278cd7ce626ed96.ttf",
     "static/media/Yrsa-Bold.ttf": "/static/media/Yrsa-Bold.ed3fb628ee93dda8b863.ttf",
     "static/media/DAYROM__.ttf": "/static/media/DAYROM__.2214f9d3b9dceccb1817.ttf",
     "static/media/Bookinsanity.otf": "/static/media/Bookinsanity.463e5d56eafe173bd669.otf",
@@ -16,12 +18,12 @@
     "static/media/logo.svg": "/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
     "index.html": "/index.html",
     "static/media/wave.svg": "/static/media/wave.2fd0f78bbc7999e4bddc.svg",
-    "main.7b607156.css.map": "/static/css/main.7b607156.css.map",
-    "main.0c37c4b4.js.map": "/static/js/main.0c37c4b4.js.map",
+    "main.b4d3fe26.css.map": "/static/css/main.b4d3fe26.css.map",
+    "main.270d1aa7.js.map": "/static/js/main.270d1aa7.js.map",
     "787.d1738b5e.chunk.js.map": "/static/js/787.d1738b5e.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.7b607156.css",
-    "static/js/main.0c37c4b4.js"
+    "static/css/main.b4d3fe26.css",
+    "static/js/main.270d1aa7.js"
   ]
 }
