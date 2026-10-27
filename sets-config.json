@@ -7,16 +7,11 @@
         "fileNames": [
             "SpellFonts.yml",
             "Animals.yml",
-            "Armors.yml",
+            "Abilities.yml",
             "Feats.yml",
-            "Monsters.yml",
-            "MonsterCalculations.yml",
             "Proficiencies.yml",
-            "Weapons.yml",
-            "Prices.yml",
             "Obstacles.yml",
-            "Other/MagicItems.yml",
-            "Other/MagicItemProperties.yml",
+            "Other/MonsterCalculations.yml",
             "Other/SpellSchoolDescriptions.yml",
             "Other/Languages.yml",
             "Other/Levels.yml",
@@ -46,7 +41,13 @@
             "Races/Elf.yml",
             "Races/Gnome.yml",
             "Races/Human.yml",
-            "Book/QuestGuard Book.yml"
+            "Items/Armors.yml",
+            "Items/Weapons.yml",
+            "Items/Prices.yml",
+            "Items/MagicItemProperties.yml",
+            "Book/QuestGuard Book.yml",
+            "Other/Monsters.yml",
+            "Items/MagicItems.yml"
         ],
         "version": "2026-07-27-1512"
     },
@@ -57,7 +58,9 @@
         "isPremium": true,
         "packages": [
             "Races",
-            "Classes"
+            "Classes",
+            "Other",
+            "Items"
         ],
         "fileNames": [
             "Core/Races/Davel.yml",
@@ -69,7 +72,11 @@
             "Core/Classes/Sorcerer.yml",
             "Core/Classes/Swashbuckler.yml"
         ],
-        "version": "2026-09-08-1733"
+        "ghostFileNames": [
+            "Other/Monsters.json",
+            "Items/MagicItems.json"
+        ],
+        "version": "2026-10-24-1724"
     },
     "early-access": {
         "name": "Early Access",
